@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import ToolCard from '@/components/ToolCard';
+import TextToVoiceConverter from '@/components/TextToVoiceConverter';
 import { tools } from '@/data/tools';
 
 const Index = () => {
@@ -48,6 +49,9 @@ const Index = () => {
       </header>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Text to Voice Converter - Featured at the top */}
+        <TextToVoiceConverter />
+
         {/* Search and Filter */}
         <div className="mb-8">
           <div className="relative mb-6">
