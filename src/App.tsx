@@ -13,6 +13,8 @@ import UUIDGenerator from '@/pages/tools/UUIDGenerator';
 import ColorPalette from '@/pages/tools/ColorPalette';
 import HashGenerator from '@/pages/tools/HashGenerator';
 import Base64Encoder from '@/pages/tools/Base64Encoder';
+import BackgroundRemover from '@/pages/tools/BackgroundRemover';
+import ImageResizer from '@/pages/tools/ImageResizer';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="/tools/color-palette" element={<ColorPalette />} />
           <Route path="/tools/hash-generator" element={<HashGenerator />} />
           <Route path="/tools/base64-encoder" element={<Base64Encoder />} />
+          <Route path="/tools/background-remover" element={<BackgroundRemover />} />
+          <Route path="/tools/image-resizer" element={<ImageResizer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Toaster />
