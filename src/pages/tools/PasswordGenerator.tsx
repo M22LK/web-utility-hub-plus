@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -138,7 +137,7 @@ const PasswordGenerator = () => {
                   <Checkbox
                     id="uppercase"
                     checked={includeUppercase}
-                    onCheckedChange={setIncludeUppercase}
+                    onCheckedChange={(checked) => setIncludeUppercase(checked === true)}
                   />
                   <label htmlFor="uppercase" className="text-sm font-medium">
                     Uppercase Letters (A-Z)
@@ -149,7 +148,7 @@ const PasswordGenerator = () => {
                   <Checkbox
                     id="lowercase"
                     checked={includeLowercase}
-                    onCheckedChange={setIncludeLowercase}
+                    onCheckedChange={(checked) => setIncludeLowercase(checked === true)}
                   />
                   <label htmlFor="lowercase" className="text-sm font-medium">
                     Lowercase Letters (a-z)
@@ -160,7 +159,7 @@ const PasswordGenerator = () => {
                   <Checkbox
                     id="numbers"
                     checked={includeNumbers}
-                    onCheckedChange={setIncludeNumbers}
+                    onCheckedChange={(checked) => setIncludeNumbers(checked === true)}
                   />
                   <label htmlFor="numbers" className="text-sm font-medium">
                     Numbers (0-9)
@@ -171,7 +170,7 @@ const PasswordGenerator = () => {
                   <Checkbox
                     id="symbols"
                     checked={includeSymbols}
-                    onCheckedChange={setIncludeSymbols}
+                    onCheckedChange={(checked) => setIncludeSymbols(checked === true)}
                   />
                   <label htmlFor="symbols" className="text-sm font-medium">
                     Symbols (!@#$%^&*)
@@ -182,7 +181,7 @@ const PasswordGenerator = () => {
                   <Checkbox
                     id="exclude-similar"
                     checked={excludeSimilar}
-                    onCheckedChange={setExcludeSimilar}
+                    onCheckedChange={(checked) => setExcludeSimilar(checked === true)}
                   />
                   <label htmlFor="exclude-similar" className="text-sm font-medium">
                     Exclude Similar Characters (il1Lo0O)

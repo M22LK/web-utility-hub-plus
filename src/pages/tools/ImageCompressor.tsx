@@ -1,10 +1,9 @@
-
 import React, { useState, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Slider } from '@/components/ui/slider';
 import { Badge } from '@/components/ui/badge';
-import { Upload, Download, ArrowLeft, Compress, Image as ImageIcon } from 'lucide-react';
+import { Upload, Download, ArrowLeft, Shrink, Image as ImageIcon } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from '@/hooks/use-toast';
 
@@ -176,7 +175,7 @@ const ImageCompressor = () => {
                     disabled={isCompressing || !file}
                     className="w-full"
                   >
-                    <Compress className="w-4 h-4 mr-2" />
+                    <Shrink className="w-4 h-4 mr-2" />
                     {isCompressing ? 'Compressing...' : 'Compress Image'}
                   </Button>
                 </div>

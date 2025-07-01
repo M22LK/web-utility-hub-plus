@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Search, Image, FileText, Calculator, Palette, Code, Download, Upload, Scissors, Compress } from 'lucide-react';
+import { Search, Image, FileText, Calculator, Palette, Code, Download, Upload, Scissors, Shrink } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
